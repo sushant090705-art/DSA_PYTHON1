@@ -1,0 +1,10 @@
+nums=[4,6,4,2,7,2,9,4]
+largest=float("-inf")
+sec_laregst=float("-inf")
+n=len(nums)
+for i in range (0,n):
+    largest=max(largest,nums[i])
+for i in range(0,n):
+    if nums[i]>sec_laregst and nums[i]!=largest:
+        sec_laregst=nums[i]
+print(sec_laregst)  
